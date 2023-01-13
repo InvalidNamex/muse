@@ -1,16 +1,14 @@
-# muse
-
-Detect music by listening..
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+This app depends on:
+- supabase database
+- admob
+- audd.io API
+- tempmail
+To initiate project
+- Go to supabase follow installation steps by editing .env file with your credentials
+- create 2 tables
+    1- admobTable (id, bannerAd, interstitialAd) columns
+      * add unique ids of the ads in the columns to display them in app all in one row
+    2- apiTable(id, apiKey) columns
+      * get an apiToken from audd.io using a temp mail for 10 days or pay for one of the plans
+      * add the apiToken to table
+Enjoy.
